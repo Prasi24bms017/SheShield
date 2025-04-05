@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheShield - Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>SheShield</h2>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="#" id="sosButton">🚨 SOS Alert</a></li>
+            <li><a href="#" id="sendSmsButton">📩 Emergency SMS</a></li>
+            <li><a href="logout.html">🚪 Logout</a></li>
+            <li><button id="darkModeToggle">🌙 Dark Mode</button></li>
+        </ul>
+    </div>
+
+    <!-- Main Dashboard Content -->
+    <div class="dashboard-content">
+        <h1>Welcome to SheShield Dashboard</h1>
+
+        <!-- Live Tracking Section -->
+        <div class="map-container">
+            <h3>📍 Live Location Tracking</h3>
+            <div id="map"></div>
+            <p>Your current location is being tracked for safety.</p>
+        </div>
+
+        <!-- Emergency Contacts -->
+        <div class="contacts-section">
+            <h3>📞 Emergency Contacts</h3>
+            <ul>
+                <li>👩‍👧 Mom - 9876543210</li>
+                <li>🧑‍🤝‍🧑 Friend - 9123456789</li>
+                <li>🚔 Police - 100</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+</body>
+</html>
